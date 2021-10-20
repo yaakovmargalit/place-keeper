@@ -1,0 +1,27 @@
+* {
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+#map {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.map-box {
+    flex: 1;
+}
+
+.place-box {
+    flex: 1;
+}

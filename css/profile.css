@@ -1,0 +1,93 @@
+* {
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user-data input {
+    display: none;
+}
+
+.avatar img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.avatar span {
+    position: absolute;
+    opacity: 0;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: 900;
+}
+
+.avatar span:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.replace-avatar {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: gold;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.user-f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+}
+
+.user-form input {
+    margin-bottom: 5px;
+    height: 30px;
+    width: 200px;
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(230, 224, 224);
+}
+
+.user-form label {
+    float: right;
+    font-size: 15px;
+}
