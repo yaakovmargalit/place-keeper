@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Map</title>
+</head>
+
+<body onload="getPosition()">
+    <p id="locationError"></p>
+    <div class="map-box">
+        <div id="map"></div>
+    </div>
+    <div class="place-box">
+
+    </div>
+    <script src="js/services/map.service.js"></script>
+    <script src="js/controls/map.control.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaQVlcIeYewnFSmm3xkL2d3HHy9xhYbz4&callback=mapReady">
+    </script>
+</body>
+
+</html>

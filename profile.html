@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <div class="user-data">
+    </div>
+
+    <div class="user-f">
+        <form action="" class="user-form" onsubmit="OnUpdateUser(event)">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <label for="date">Date of birth</label>
+            <input type="date" name="date" id="date" required>
+            <label for="txt-color">Text color</label>
+            <input type="color" name="txt-color" id="txt-color" required>
+            <label for="back-color">Background color</label>
+            <input placeholder="ff" type="color" name="back-color" required id="back-color">
+            <label for="range-age">Your Age</label>
+            <input type="range" name="range-age" id="range-age" min="18" required max="120">
+            <button>Svae</button>
+        </form>
+    </div>
+
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/profile.service.js"></script>
+    <script src="js/controls/profile.control.js"></script>
+</body>
+
+</html>
